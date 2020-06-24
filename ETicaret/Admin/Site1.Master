@@ -1,0 +1,94 @@
+﻿F<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ETicaret.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="css/colorpicker.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/uniform.css" />
+    <link rel="stylesheet" href="css/select2.css" />
+    <link rel="stylesheet" href="css/matrix-style.css" />
+    <link rel="stylesheet" href="css/matrix-media.css" />
+    <link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--Header-part-->
+        <div id="header">
+            <h1><a href=""></a></h1>
+        </div>
+        <!--close-Header-part-->
+
+        <!--top-Header-menu-->
+        <div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav">
+               <li>
+                    <i class="icon icon-user"></i>
+                    <span class="text">
+                    <asp:Literal ID="Literal1" runat="server"></asp:Literal></span><b class="caret"></b>
+                  
+                </li>
+               
+                <li class="pull-right"><a title="" href="Login.aspx" ><i class="icon icon-share-alt"></i><span class="text">Çıkış</span></a></li>
+            </ul>
+        </div>
+
+        <div id="sidebar">
+            <a href="#" class="visible-phone"><i class="icon icon-list"></i>Forms</a>
+            <ul>
+                <li><a href="Kategoriler.aspx"><i class="icon icon-home"></i><span>Kategoriler</span></a> </li>
+                <li><a href="Urunler.aspx"><i class="icon icon-signal"></i><span>Ürünler</span></a> </li>
+                <li><a href="Uyeler.aspx"><i class="icon icon-signal"></i><span>Kayıtlı Üyeler</span></a> </li>
+                <li><a href="Kullanicilar.aspx"><i class="icon icon-signal"></i><span>Kullanıcılar</span></a> </li>
+                <li><a href="KullaniciYorumlari.aspx"><i class="icon icon-signal"></i><span>Üyelerin Yorumları</span></a> </li>
+               <li><a href="BannerYonetimi.aspx"><i class="icon icon-signal"></i><span>Banner Yönetimi</span></a> </li>
+                <li><a href="Siparisler.aspx"><i class="icon icon-signal"></i><span>Verilen Siparişler</span></a> </li>
+            </ul>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <!--Footer-part-->
+        <div class="row-fluid">
+            <div id="footer" class="span12">2018 &copy;    </div>
+        </div>
+        <!--end-Footer-part-->
+       
+<script src="js/excanvas.min.js"></script> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flot.min.js"></script> 
+<script src="js/jquery.flot.resize.min.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<script src="js/fullcalendar.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.dashboard.js"></script> 
+<script src="js/jquery.gritter.min.js"></script> 
+<script src="js/matrix.interface.js"></script> 
+<script src="js/matrix.chat.js"></script> 
+<script src="js/jquery.validate.js"></script> 
+<script src="js/matrix.form_validation.js"></script> 
+<script src="js/jquery.wizard.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/matrix.popover.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.tables.js"></script> 
+        <script>
+            $('.textarea_editor').wysihtml5();
+        </script>
+    </form>
+</body>
+</html>

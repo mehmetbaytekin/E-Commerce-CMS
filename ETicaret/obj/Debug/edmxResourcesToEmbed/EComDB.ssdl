@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="projeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DetayTanimlari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KategoriID" Type="int" />
+    <Property Name="DetayAdi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KampanyaBanner">
+    <Key>
+      <PropertyRef Name="bannerID" />
+    </Key>
+    <Property Name="bannerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bannerResim" Type="nvarchar" MaxLength="200" />
+    <Property Name="bannerAciklama" Type="nvarchar" MaxLength="300" />
+    <Property Name="bannerTarih" Type="date" />
+    <Property Name="aktiflik" Type="bit" />
+  </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Yetki" Type="int" />
+  </EntityType>
+  <EntityType Name="SiparisDetay">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiparisID" Type="int" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="Miktar" Type="float" />
+    <Property Name="Fiyat" Type="float" />
+  </EntityType>
+  <EntityType Name="SiparisDurumlari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiparisDurumu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Siparislerim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="UyeID" Type="int" />
+    <Property Name="Tarih" Type="datetime" />
+    <Property Name="SiparisDurumu" Type="int" />
+    <Property Name="Tutar" Type="float" />
+    <Property Name="KargoFirmai" Type="int" />
+    <Property Name="KargoTutari" Type="float" />
+    <Property Name="ToplamTutar" Type="float" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UrunDetaylari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="UrunDetayID" Type="int" />
+    <Property Name="Detay" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UrunKategorileri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KategoriAdi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Urunler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunKategorisi" Type="int" />
+    <Property Name="UrunMarkasi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunFiyati" Type="float" />
+    <Property Name="IndirimOrani" Type="float" />
+    <Property Name="UrunOrijinalFiyati" Type="float" />
+    <Property Name="StokMiktari" Type="float" />
+    <Property Name="UrunAciklamasi" Type="ntext" />
+    <Property Name="DegerlendirmePuani" Type="float" />
+    <Property Name="OlusturmaTarihi" Type="datetime" />
+    <Property Name="Olusturan" Type="int" />
+    <Property Name="DegisiklikTarihi" Type="datetime" />
+    <Property Name="Degistiren" Type="int" />
+    <Property Name="Aktif" Type="bit" />
+  </EntityType>
+  <EntityType Name="UrunResimleri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="Resim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vitrin" Type="bit" />
+  </EntityType>
+  <EntityType Name="UrunYorumlari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="Tarih" Type="datetime" />
+    <Property Name="UyeID" Type="int" />
+    <Property Name="Yorum" Type="nvarchar" MaxLength="500" />
+    <Property Name="YorumDurum" Type="int" />
+  </EntityType>
+  <EntityType Name="Uyeler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cinsiyet" Type="bit" />
+    <Property Name="DogumTarihi" Type="date" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_SiparisDetay_Siparislerim">
+    <End Role="Siparislerim" Type="Self.Siparislerim" Multiplicity="0..1" />
+    <End Role="SiparisDetay" Type="Self.SiparisDetay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Siparislerim">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SiparisDetay">
+        <PropertyRef Name="SiparisID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urunler_UrunKategorileri">
+    <End Role="UrunKategorileri" Type="Self.UrunKategorileri" Multiplicity="0..1" />
+    <End Role="Urunler" Type="Self.Urunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrunKategorileri">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Urunler">
+        <PropertyRef Name="UrunKategorisi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UrunYorumlari_Urunler">
+    <End Role="Urunler" Type="Self.Urunler" Multiplicity="0..1" />
+    <End Role="UrunYorumlari" Type="Self.UrunYorumlari" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Urunler">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UrunYorumlari">
+        <PropertyRef Name="UrunID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="projeModelStoreContainer">
+    <EntitySet Name="DetayTanimlari" EntityType="Self.DetayTanimlari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KampanyaBanner" EntityType="Self.KampanyaBanner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SiparisDetay" EntityType="Self.SiparisDetay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SiparisDurumlari" EntityType="Self.SiparisDurumlari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Siparislerim" EntityType="Self.Siparislerim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunDetaylari" EntityType="Self.UrunDetaylari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunKategorileri" EntityType="Self.UrunKategorileri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Urunler" EntityType="Self.Urunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunResimleri" EntityType="Self.UrunResimleri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunYorumlari" EntityType="Self.UrunYorumlari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uyeler" EntityType="Self.Uyeler" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_SiparisDetay_Siparislerim" Association="Self.FK_SiparisDetay_Siparislerim">
+      <End Role="Siparislerim" EntitySet="Siparislerim" />
+      <End Role="SiparisDetay" EntitySet="SiparisDetay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urunler_UrunKategorileri" Association="Self.FK_Urunler_UrunKategorileri">
+      <End Role="UrunKategorileri" EntitySet="UrunKategorileri" />
+      <End Role="Urunler" EntitySet="Urunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UrunYorumlari_Urunler" Association="Self.FK_UrunYorumlari_Urunler">
+      <End Role="Urunler" EntitySet="Urunler" />
+      <End Role="UrunYorumlari" EntitySet="UrunYorumlari" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

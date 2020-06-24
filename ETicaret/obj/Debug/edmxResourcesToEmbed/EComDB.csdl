@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="projeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DetayTanimlari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriID" Type="Int32" />
+    <Property Name="DetayAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="KampanyaBanner">
+    <Key>
+      <PropertyRef Name="bannerID" />
+    </Key>
+    <Property Name="bannerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bannerResim" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="bannerAciklama" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="bannerTarih" Type="DateTime" Precision="0" />
+    <Property Name="aktiflik" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Yetki" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SiparisDetay">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SiparisID" Type="Int32" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="Miktar" Type="Double" />
+    <Property Name="Fiyat" Type="Double" />
+    <NavigationProperty Name="Siparislerim" Relationship="Self.FK_SiparisDetay_Siparislerim" FromRole="SiparisDetay" ToRole="Siparislerim" />
+  </EntityType>
+  <EntityType Name="SiparisDurumlari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SiparisDurumu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Siparislerim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="UyeID" Type="Int32" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="SiparisDurumu" Type="Int32" />
+    <Property Name="Tutar" Type="Double" />
+    <Property Name="KargoFirmai" Type="Int32" />
+    <Property Name="KargoTutari" Type="Double" />
+    <Property Name="ToplamTutar" Type="Double" />
+    <NavigationProperty Name="SiparisDetays" Relationship="Self.FK_SiparisDetay_Siparislerim" FromRole="Siparislerim" ToRole="SiparisDetay" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UrunDetaylari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="UrunDetayID" Type="Int32" />
+    <Property Name="Detay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UrunKategorileri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Urunlers" Relationship="Self.FK_Urunler_UrunKategorileri" FromRole="UrunKategorileri" ToRole="Urunler" />
+  </EntityType>
+  <EntityType Name="Urunler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UrunKategorisi" Type="Int32" />
+    <Property Name="UrunMarkasi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UrunFiyati" Type="Double" />
+    <Property Name="IndirimOrani" Type="Double" />
+    <Property Name="UrunOrijinalFiyati" Type="Double" />
+    <Property Name="StokMiktari" Type="Double" />
+    <Property Name="UrunAciklamasi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DegerlendirmePuani" Type="Double" />
+    <Property Name="OlusturmaTarihi" Type="DateTime" Precision="3" />
+    <Property Name="Olusturan" Type="Int32" />
+    <Property Name="DegisiklikTarihi" Type="DateTime" Precision="3" />
+    <Property Name="Degistiren" Type="Int32" />
+    <Property Name="Aktif" Type="Boolean" />
+    <NavigationProperty Name="UrunKategorileri" Relationship="Self.FK_Urunler_UrunKategorileri" FromRole="Urunler" ToRole="UrunKategorileri" />
+    <NavigationProperty Name="UrunYorumlaris" Relationship="Self.FK_UrunYorumlari_Urunler" FromRole="Urunler" ToRole="UrunYorumlari" />
+  </EntityType>
+  <EntityType Name="UrunResimleri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="Resim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Vitrin" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="UrunYorumlari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="UyeID" Type="Int32" />
+    <Property Name="Yorum" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="YorumDurum" Type="Int32" />
+    <NavigationProperty Name="Urunler" Relationship="Self.FK_UrunYorumlari_Urunler" FromRole="UrunYorumlari" ToRole="Urunler" />
+  </EntityType>
+  <EntityType Name="Uyeler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cinsiyet" Type="Boolean" />
+    <Property Name="DogumTarihi" Type="DateTime" Precision="0" />
+    <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_SiparisDetay_Siparislerim">
+    <End Role="Siparislerim" Type="Self.Siparislerim" Multiplicity="0..1" />
+    <End Role="SiparisDetay" Type="Self.SiparisDetay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Siparislerim">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SiparisDetay">
+        <PropertyRef Name="SiparisID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urunler_UrunKategorileri">
+    <End Role="UrunKategorileri" Type="Self.UrunKategorileri" Multiplicity="0..1" />
+    <End Role="Urunler" Type="Self.Urunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrunKategorileri">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Urunler">
+        <PropertyRef Name="UrunKategorisi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UrunYorumlari_Urunler">
+    <End Role="Urunler" Type="Self.Urunler" Multiplicity="0..1" />
+    <End Role="UrunYorumlari" Type="Self.UrunYorumlari" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Urunler">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UrunYorumlari">
+        <PropertyRef Name="UrunID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="projeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DetayTanimlaris" EntityType="Self.DetayTanimlari" />
+    <EntitySet Name="KampanyaBanners" EntityType="Self.KampanyaBanner" />
+    <EntitySet Name="Kullanicilars" EntityType="Self.Kullanicilar" />
+    <EntitySet Name="SiparisDetays" EntityType="Self.SiparisDetay" />
+    <EntitySet Name="SiparisDurumlaris" EntityType="Self.SiparisDurumlari" />
+    <EntitySet Name="Siparislerims" EntityType="Self.Siparislerim" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="UrunDetaylaris" EntityType="Self.UrunDetaylari" />
+    <EntitySet Name="UrunKategorileris" EntityType="Self.UrunKategorileri" />
+    <EntitySet Name="Urunlers" EntityType="Self.Urunler" />
+    <EntitySet Name="UrunResimleris" EntityType="Self.UrunResimleri" />
+    <EntitySet Name="UrunYorumlaris" EntityType="Self.UrunYorumlari" />
+    <EntitySet Name="Uyelers" EntityType="Self.Uyeler" />
+    <AssociationSet Name="FK_SiparisDetay_Siparislerim" Association="Self.FK_SiparisDetay_Siparislerim">
+      <End Role="Siparislerim" EntitySet="Siparislerims" />
+      <End Role="SiparisDetay" EntitySet="SiparisDetays" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urunler_UrunKategorileri" Association="Self.FK_Urunler_UrunKategorileri">
+      <End Role="UrunKategorileri" EntitySet="UrunKategorileris" />
+      <End Role="Urunler" EntitySet="Urunlers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UrunYorumlari_Urunler" Association="Self.FK_UrunYorumlari_Urunler">
+      <End Role="Urunler" EntitySet="Urunlers" />
+      <End Role="UrunYorumlari" EntitySet="UrunYorumlaris" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

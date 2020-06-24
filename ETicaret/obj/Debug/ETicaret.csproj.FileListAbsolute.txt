@@ -1,0 +1,75 @@
+C:\Users\lenovo\Documents\Visual Studio 2013\Projects\ETicaret\ETicaret\bin\ETicaret.dll.config
+C:\Users\lenovo\Documents\Visual Studio 2013\Projects\ETicaret\ETicaret\bin\ETicaret.dll
+C:\Users\lenovo\Documents\Visual Studio 2013\Projects\ETicaret\ETicaret\bin\ETicaret.pdb
+C:\Users\lenovo\Documents\Visual Studio 2013\Projects\ETicaret\ETicaret\obj\Debug\ETicaret.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Documents\Visual Studio 2013\Projects\ETicaret\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\lenovo\Documents\Visual Studio 2013\Projects\ETicaret\ETicaret\obj\Debug\ETicaret.pdb
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-06092018-satinalEklendi\ETicaret\bin\ETicaret.dll.config
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-06092018-satinalEklendi\ETicaret\bin\ETicaret.dll
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-06092018-satinalEklendi\ETicaret\bin\ETicaret.pdb
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-06092018-satinalEklendi\ETicaret\obj\Debug\ETicaret.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-06092018-satinalEklendi\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-06092018-satinalEklendi\ETicaret\obj\Debug\ETicaret.pdb
+C:\Users\lenovo\Desktop\ETicaret-06092018-satinalEklendi\ETicaret\bin\ETicaret.dll.config
+C:\Users\lenovo\Desktop\ETicaret-06092018-satinalEklendi\ETicaret\bin\ETicaret.dll
+C:\Users\lenovo\Desktop\ETicaret-06092018-satinalEklendi\ETicaret\bin\ETicaret.pdb
+C:\Users\lenovo\Desktop\ETicaret-06092018-satinalEklendi\ETicaret\obj\Debug\ETicaret.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\ETicaret-06092018-satinalEklendi\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\lenovo\Desktop\ETicaret-06092018-satinalEklendi\ETicaret\obj\Debug\ETicaret.pdb
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-15092018-son hali\ETicaret\bin\ETicaret.dll.config
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-15092018-son hali\ETicaret\bin\ETicaret.dll
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-15092018-son hali\ETicaret\bin\ETicaret.pdb
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-15092018-son hali\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-15092018-son hali\ETicaret\obj\Debug\ETicaret.pdb
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-15092018-son hali\ETicaret\obj\Debug\ETicaret.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\adaso-eğitim\EticaretSite\ETicaret-15092018-son hali\ETicaret\obj\Debug\ETicaret.csproj.CoreCompileInputs.cache
+C:\Users\Baytekin\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.dll.config
+C:\Users\Baytekin\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.dll
+C:\Users\Baytekin\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.pdb
+C:\Users\Baytekin\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.csprojResolveAssemblyReference.cache
+C:\Users\Baytekin\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CoreCompileInputs.cache
+C:\Users\Baytekin\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\Baytekin\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.pdb
+E:\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.dll.config
+E:\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.dll
+E:\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.pdb
+E:\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.csprojAssemblyReference.cache
+E:\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CoreCompileInputs.cache
+E:\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.dll
+E:\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.pdb
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.dll.config
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.dll
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\ETicaret.pdb
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\EntityFramework.dll
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\EntityFramework.SqlServer.dll
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\EntityFramework.xml
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\bin\EntityFramework.SqlServer.xml
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.csprojAssemblyReference.cache
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CoreCompileInputs.cache
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CopyComplete
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\mm\Desktop\ETicaret sevda\ETicaret\ETicaret\obj\Debug\ETicaret.pdb
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.csprojAssemblyReference.cache
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CoreCompileInputs.cache
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.pdb
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\bin\ETicaret.dll.config
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\bin\ETicaret.dll
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\bin\ETicaret.pdb
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.dll
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.SqlServer.dll
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.xml
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.SqlServer.xml
+C:\Users\mm\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CopyComplete
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\bin\ETicaret.dll.config
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\bin\ETicaret.dll
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\bin\ETicaret.pdb
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.dll
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.SqlServer.dll
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.xml
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\bin\EntityFramework.SqlServer.xml
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.csprojAssemblyReference.cache
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CoreCompileInputs.cache
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.csproj.CopyComplete
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.dll
+C:\Users\Byte\Desktop\bayte\ETicaret\ETicaret\obj\Debug\ETicaret.pdb
